@@ -1,0 +1,478 @@
+*,
+*:before,
+*:after {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+
+/*COLORS
+
+light yellow - #FCF196
+light grey - #F1F1F1
+brown - #7E2222
+dark grey - #595959
+
+*/
+
+/*GLOBAL*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.main_heading {
+    font-size: 25px;
+/*    margin-left: 13px*/
+}
+
+/*NAVIGATION*/
+
+.logo {
+    font-size: 23px;
+    margin: 5px 13px;
+}
+
+.burger {
+    height: 18px;
+    display: block;
+    cursor: pointer;
+    display: block;
+    margin: 10px 13px;
+}
+
+nav {
+    height: 40px;
+    background-color: #FCF196;
+    width: 100%;
+}
+
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.nav_container ul {
+    display: none;
+}
+
+/*BURGER MENU*/
+
+
+.burger_content {
+    text-align: center;
+    margin-top: 30px;
+    background: #FCF196;
+    height: 100vw;
+    text-align: center;
+    margin-top: 30px;
+    background: #FCF196;
+    height: 100vw;
+    display: none;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1;
+}
+
+/*MAIN CONTENT*/
+
+main img {
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+}
+main {
+    margin: 0 auto 0;
+}
+
+.teaser_picture {
+    width: 95%;
+    height: 150px;
+    object-position: top;
+    object-fit: cover;
+    display: block;
+    margin: 10px auto;
+}
+
+
+.teaser_container {
+    background: white;
+    width: 350px;
+    height: 210px;
+    padding: 10px;
+    margin: 5px auto 20px;
+}
+
+.leftside_container {
+    background: #F1F1F1;
+}
+
+.main_content {
+    padding: 15px;
+}
+
+p {
+    margin: 10px 0;
+}
+
+h5 {
+    font-size: 17px;
+}
+
+.reasons {
+    font-size: 23px;
+    margin-bottom: 10px;
+}
+
+    .picture_text {
+        font-size: 12px;
+        color: grey;
+    }
+
+.description {
+    font-style: italic;
+}
+
+/*INFO*/
+.info_container {
+    background: white;
+    padding: 30px;
+    margin-bottom: 10px;
+}
+
+/*DONATE*/
+
+.donate_container {
+    background-color: #FCF196;
+    padding: 13px;
+    margin-bottom: 20px;
+}
+
+.button {
+    font-family: Montserrat;
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+    padding: 13px 35px;
+    border-radius: 50px;
+    background: #595959;
+    margin: 15px auto 0;
+    display: block;
+}
+
+.donate_container p {
+    font-size: 18px;
+    margin-top: 7px;
+}
+/*NEWSLETTER*/
+
+.newsletter_container {
+    background: #FCF196;
+    padding: 13px 13px 15px;
+}
+
+.newsletter_container p {
+    font-size: 18px;
+    margin-top: 7px;
+}
+
+.email_field {
+    position: absolute;
+    border-radius: 30px;
+    padding: 13px;
+    font-size: 16px;
+    font-family: Montserrat;
+    margin: 10px 45px;
+    display: block;
+}
+
+.subscribe {
+    position: relative;
+    background: #595959;
+    bottom: -4px;
+    right: -60px;
+    padding: 12px 15px;
+}
+
+/*FOOTER*/
+
+footer {
+    background: #595959;
+}
+
+.white {
+    color: white;
+    display: block;
+}
+
+.center {
+    margin: 0 auto;
+    padding-top: 10px;
+    width: 90px;
+}
+
+footer h1 {
+    font-weight: 400;
+    margin: 20px auto 10px;
+    width: 130px;
+}
+
+footer div img {
+    height: 40px;
+    color: white;
+    margin: 5px 10px 15px;
+}
+
+footer div {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_container {
+    display: flex;
+    flex-direction: column;
+}
+
+/*SIDEBAR*/
+
+.gone {
+    display: none;
+    }
+
+
+/***********
+
+   MEDIA
+
+************/
+
+
+@media (min-width:700px) {
+
+    .gone2 {
+        display: none;
+    }
+
+    .gone {
+        display: block;
+    }
+
+/*SIDEBAR*/
+
+    .size{
+        max-width: 300px;
+    }
+
+    .search_container {
+        background: #FCF196;
+        margin-bottom: 20px;
+        height: 70px;
+    }
+
+    .search_icon {
+        height: 26px;
+        width: 25px;
+        position: relative;
+        right: -85px;
+        top: -60px;
+    }
+    .searchfield {
+        padding: 13px 10px;
+        border-radius: 30px;
+        margin: 13px;
+        font-family: Montserrat;
+        font-size: 17px;
+    }
+
+    .sidebar_container {
+        margin-left: 10px;
+    }
+
+    .sidebar_container p {
+        font-size: 16px;
+    }
+    .main_heading {
+        font-size: 20px;
+
+    }
+
+/*NEWSLETTER*/
+
+    .email_field {
+        margin-left: 0px;
+        margin-top: 0;
+        font-size: 13px;
+
+    }
+
+    .subscribe {
+        width: 100px;
+        font-size: 13px;
+        padding: 13px 10px;
+        bottom: 5px;
+        left: 65px;
+
+    }
+
+
+/*NAVIGATION*/
+    .burger {
+    display: none;
+    }
+
+    .nav_flex ul {
+    display: block;
+}
+    .nav_container li {
+    list-style: none;
+    margin: 0 20px;
+}
+    .nav_flex ul {
+        display: flex;
+    }
+
+        .nav_container {
+    max-width: 1090px;
+        margin: 0 auto;
+
+    }
+
+/*HEADER*/
+
+    .lion_small {
+        display: none;
+    }
+
+    .lion_big {
+        display: block;
+        width: 650px;
+        height: 100%;
+    }
+
+/*MAIN CONTENT*/
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        max-width: 1100px;
+        margin: 10px auto;
+
+    }
+
+    .main_content {
+        padding: 25px;
+    }
+    .latest_features {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .teaser_container {
+        margin: 0 10px;
+    }
+
+    .teaser_container2 {
+        max-width: 380px;
+    }
+
+    .deerpark {
+        height: 470px;
+    }
+
+    .deerpark_pic {
+        height: 300px;
+    }
+
+    .teaser_flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+
+
+
+/*INFO*/
+    .info_container {
+        width: 300px;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .amazed {
+        max-width: 500px;
+        margin-left: 10px;
+    }
+
+
+/*FOOTER*/
+
+    .footer_container {
+        max-width: 1100px;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: row;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .some {
+        margin-top: 40px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
