@@ -338,11 +338,11 @@ footer div {
     }
 
     .deerpark {
-        height: 470px;
+        min-height: 420px;
     }
 
     .deerpark_pic {
-        height: 300px;
+        height: 310px;
     }
 
     /*NEWSLETTER*/
