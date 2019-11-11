@@ -5,27 +5,54 @@
     <meta charset="UTF-8">
     <title>Deer Park in Aarhus | Untamed.</title>
     <link rel="stylesheet" href="../css/deerpark.css">
+    <link rel="stylesheet" href="../css/mystyle.css">
+    <link rel="stylesheet" href="../css/navigation.css">
+    <link rel="stylesheet" href="../css/topnavbar.css">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Learn more about the most magical place for animal lovers in Aarhus. Truly get in touch with nature and fall in love with the wilderness.">
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <nav>
-        <div class="nav_container">
-            <a href="../index.html" class="link logo">UNTAMED.</a>
-            <div class="nav_flex">
-            <ul>
-                    <li><a href="#" class="link">features</a></li>
-                    <li><a href="#" class="link">take action</a></li>
-                    <li><a href="#" class="link">about</a></li>
+        <nav class="navigation_container">
+           <div class="nav_wrapper">
+               <a href="../index.html" class="link"><span class="logo">UNTAMED.</span></a>
+
+
+            <input class="menu-btn" type="checkbox" id="menu-btn">
+            <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+
+            <div class="menu navbar">
+                <div class="dropdown">
+                    <a href="#" class="nav_link">features</a>
+                </div>
+
+                <div class="dropdown">
+                    <a href="#" class="nav_link">take action</a>
+
+                </div>
+
+                <div class="dropdown">
+                    <a href="#" class="nav_link">about</a>
+                    <div class="dropdown-content">
+                    </div>
+                </div>
+
+                </div>
+
+            <ul class="mobilemenu">
+                <li><a href="#" class="nav_link">features</a>
+
+                </li>
+                <li><a href="#" class="nav_link">take action</a>
+
+                </li>
+                <li><a href="#" class="nav_link">about</a></li>
             </ul>
             </div>
-            <img src="../icons/burger.png" alt="Burger menu icon" class="burger">
-        </div>
-    </nav>
-    <main>
+        </nav>
 
+    <main>
         <!--SIDEBAR FOR DESKTOP-->
         <div class="sidebar_container gone">
             <!--SEARCHFIELD-->
@@ -47,6 +74,14 @@
                 <p>And receive weekly reminders about new articles</p>
                 <input type="text" placeholder="Enter your email" class="email_field">
                 <button type="button" class="button subscribe">SUBSCRIBE</button>
+            </section>
+             <!--EXTERNAL LINKS-->
+            <section class="external_container size gone">
+                <h2 class="main_heading">WEBSITES YOU MIGHT WANT TO VISIT</h2>
+                <a href="https://www.peta.org/" class="link">PETA</a>
+                <a href="https://www.nationalgeographic.com/" class="link">National Geographic</a>
+                <a href="https://www.thedodo.com/" class="link">The Dodo</a>
+                <a href="https://www.crueltyfreeinternational.org/" class="link">Cruelty-free International</a>
             </section>
         </div>
 
@@ -124,18 +159,22 @@
     <!--FOOTER-->
     <footer>
         <div class="footer_container">
-            <span>
-                <a href="#" class="link white center">home</a>
-                <a href="#" class="link white center">features</a>
-                <a href="#" class="link white center">take action</a>
-                <a href="#" class="link white center">about</a>
-            </span>
-            <div class="some">
-                <h1 class="main_heading white ">FOLLOW US</h1>
+
+            <ul>
+                <li><a href="#" class="link white">home</a></li>
+                <li><a href="#" class="link white">features</a></li>
+                <li><a href="#" class="link white">take action</a></li>
+                <li><a href="#" class="link white">about</a></li>
+            </ul>
+
+<div class="footer_right">
+            <h1 class="main_heading white">FOLLOW US</h1>
+            <div class="some_container">
                 <a href="#"><img src="../icons/facebook.svg" alt="Facebook"></a>
                 <a href="#"><img src="../icons/instagram.svg" alt="Instagram"></a>
                 <a href="#"><img src="../icons/snapchat.svg" alt="Snapchat"></a>
             </div>
+        </div>
         </div>
     </footer>
 
