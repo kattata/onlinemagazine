@@ -1,4 +1,4 @@
-# onlinemagazine
+# Untamed - Online Magazine
 
 ## Description:
 The first project during my studies at Business Academy Aarhus, Multimedia Design programme. Individual.<br>
